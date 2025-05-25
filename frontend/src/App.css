@@ -1,0 +1,271 @@
+﻿body {
+    background: linear-gradient(135deg, #18122d 0%, #403070 100%);
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+nav {
+    background: #25195e;
+    padding: 16px 0;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px #0003;
+}
+
+    nav a {
+        color: #eee;
+        font-weight: 500;
+        margin: 0 20px;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 16px;
+        transition: background 0.2s, color 0.2s;
+    }
+
+        nav a:hover,
+        nav a.active {
+            background: #3f3475;
+            color: #fff;
+        }
+
+h1, h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+input, button {
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+input {
+    background: #231f4e;
+    color: #fff;
+    border: 1px solid #312e61;
+}
+
+    input:focus {
+        border: 1.5px solid #8e24aa;
+        background: #2b2760;
+    }
+
+button {
+    background: #8e24aa;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+    button:hover {
+        background: #5c197b;
+    }
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+li {
+    background: #231f4e;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 4px #0003;
+}
+
+    li form {
+        gap: 8px;
+        margin: 0;
+    }
+
+@media (max-width: 600px) {
+    nav {
+        padding: 10px 0;
+    }
+
+        nav a {
+            margin: 0 8px;
+            font-size: 1rem;
+            padding: 6px 10px;
+        }
+
+    form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    ul, li {
+        max-width: 95vw;
+    }
+}
+
+.history-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 24px 20px;
+    background: rgba(40, 20, 70, 0.6);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px #0002;
+    color: #fff;
+}
+
+.history-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+    .history-form input,
+    .history-form select,
+    .history-form button {
+        padding: 8px 10px;
+        border-radius: 8px;
+        border: none;
+        font-size: 1em;
+        background: #25125a;
+        color: #fff;
+        outline: none;
+        min-width: 120px;
+    }
+
+    .history-form button {
+        background: #af39c6;
+        font-weight: bold;
+        transition: background 0.2s;
+    }
+
+        .history-form button:hover {
+            background: #6f2cac;
+        }
+
+.error-message {
+    color: #ff6584;
+    margin-bottom: 10px;
+}
+
+.history-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.history-item {
+    margin-bottom: 12px;
+    padding: 10px;
+    background: #271847;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    font-size: 1em;
+}
+
+/* RWD: mobile */
+@media (max-width: 600px) {
+    .history-container {
+        padding: 10px 2vw;
+    }
+
+    .history-form {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+        .history-form input,
+        .history-form select,
+        .history-form button {
+            min-width: 0;
+            width: 100%;
+            font-size: 1em;
+        }
+}
+
+.app-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky-footer {
+    width: 100%;
+    background: rgba(21, 10, 40, 0.95);
+    color: #bbb;
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    padding: 18px 0 13px 0;
+    margin-top: auto;
+    text-align: center;
+    box-shadow: 0 -2px 24px 0 #251b40a0;
+    z-index: 50;
+}
+
+.constellations-main-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px; /* odstęp między elementami */
+    margin: 32px 0 0 0;
+    flex-wrap: wrap;
+}
+
+/* Karty konstelacji */
+.constellation-card {
+    background: #2d1a49ee;
+    border-radius: 22px;
+    box-shadow: 0 4px 40px #22184066;
+    padding: 28px 20px 20px 20px;
+    max-width: 380px;
+    width: 100%;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.constellation-desc {
+    margin-top: 18px;
+    font-size: 16px;
+    color: #ccc;
+    text-align: center;
+}
+
+/* Środkowy opis */
+.constellation-description {
+    background: #271849e7;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px #22184066;
+    padding: 36px 38px 36px 38px;
+    max-width: 320px;
+    min-width: 220px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .constellation-description h3 {
+        margin-bottom: 14px;
+        font-size: 27px;
+        font-weight: bold;
+        color: #be5bff;
+    }

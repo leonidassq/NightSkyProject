@@ -1,0 +1,47 @@
+{
+  "stars": [
+    {
+      "name": "Polarna",
+      "description": "test",
+      "photoUrl": "https://kosmonauta.net/wp-content/uploads/2012/12/images_stories_2012_pozostale_astronomia_polaris_1.jpg",
+      "constellations": [],
+      "id": "1748121498333",
+      "isOn": false
+    }
+  ],
+  "constellations": [
+    {
+      "name": "Ozyrys",
+      "description": "fhfjffhj",
+      "stars": [],
+      "id": "1748107821652",
+      "isOn": true
+    },
+    {
+      "name": "Wodnik",
+      "description": "test",
+      "photoUrl": "https://teleskop.pl/data/include/cms/BLOG-TELESKOP/Gwiazdozbior-Wodnika/konstelacja_wodnika.webp",
+      "stars": [],
+      "id": "1748121544289",
+      "isOn": false
+    }
+  ],
+  "skyConditions": [
+    {
+      "date": "2025-05-24T20:54:36.884Z",
+      "cloudiness": "1",
+      "moonPhase": "pierwsza kwadra",
+      "precipitation": "deszcz",
+      "fog": "1",
+      "id": "1748120076884"
+    },
+    {
+      "date": "2025-05-25T11:48:19.075Z",
+      "cloudiness": "4",
+      "moonPhase": "pełnia",
+      "precipitation": "deszcz",
+      "fog": "2",
+      "id": "1748173699075"
+    }
+  ]
+}
